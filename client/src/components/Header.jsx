@@ -4,9 +4,10 @@ import Logo from '../assets/logo.png'
 import './Header.css'
 import { Link } from 'react-router-dom'
 import { IconButton } from '@mui/material'
-import { MenuRounded } from '@mui/icons-material'
+import { CloseRounded, MenuRounded } from '@mui/icons-material'
 export default function Header() {
     const [fixed, setFixed] = useState(false);
+    const [show, setShow] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -38,11 +39,14 @@ export default function Header() {
                 <Link className='hover:text-sky-900'><li>Contact</li></Link>
             </div>
             <div className="hamBtn">
-                <IconButton color='inherit'>
+                <IconButton color='inherit' onClick={() => setShow(true)}>
                     <MenuRounded />
                 </IconButton>
             </div>
-            <div className="navitems-sm">
+            <div className={`navitems-sm  ${show ?'showNav' : ''}`}>
+                <IconButton onClick={() => setShow(false)}>
+                    <CloseRounded/>
+                </IconButton>
                 <Link><li>Home</li></Link>
                 <Link><li>About</li></Link>
                 <Link><li>Services</li></Link>
