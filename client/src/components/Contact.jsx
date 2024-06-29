@@ -21,9 +21,7 @@ export default function Contact() {
                                 <p
                                     className="text-base leading-relaxed text-body-color dark:text-dark-6 mb-9"
                                 >
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                    adiqua minim veniam quis nostrud exercitation ullamco
+                                   Are you interested in investing in farmhouses, agricultural land, property, or raw houses? Contact us for more information.
                                 </p>
                                 <div className="mb-8 flex w-full max-w-[370px]">
                                     <div
