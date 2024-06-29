@@ -80,7 +80,7 @@ nav {
 
 .nav-fixed {
     position: fixed;
-    padding: 15px 22px;
+    /* padding: 15px 22px; */
     transition: all .1s linear;
     z-index: 990;
 }
