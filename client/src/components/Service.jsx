@@ -5,7 +5,7 @@ export default function Service() {
         <div id="services">
             <section className="bg-white pb-6">
                 <div className="max-w-7xl mx-auto p-4 sm:p-3 lg:p-1">
-                    <div className="container mx-auto px-6  bg-white">
+                    <div id='' className="container mx-auto px-6  bg-white">
 
                         <div className="mb-4 text-center">
                             <h4 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Our Services</h4>
@@ -84,7 +84,7 @@ export default function Service() {
                             </div>
 
                             {/* Villas Section */}
-                            <div className="w-full border-b md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 p-8">
+                            <div id='' className="w-full border-b md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 p-8">
                                 <div className="flex items-center mb-6">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
                                         fill="currentColor" className="h-6 w-6 text-indigo-500">
@@ -94,7 +94,7 @@ export default function Service() {
                                     </svg>
                                     <div className="ml-4 text-xl">Villas</div>
                                 </div>
-                                <p className="leading-loose text-gray-500">Luxurious villas designed for comfort and elegance. Explore our range of villas offering scenic views and premium amenities. Proin consequat magna sed sem efficitur.</p>
+                                <p id="" className="leading-loose text-gray-500">Luxurious villas designed for comfort and elegance. Explore our range of villas offering scenic views and premium amenities. Proin consequat magna sed sem efficitur.</p>
                             </div>
                         </div>
                     </div>

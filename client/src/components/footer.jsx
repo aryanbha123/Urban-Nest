@@ -19,7 +19,7 @@ export default function footer() {
                                         </div>
                                         <input type="text" id="default-search"
                                             class="block w-full max-sm:min-w-full sm:max-w-xs pr-4 pl-12 py-2.5 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-lg placeholder-gray-400 focus:outline-none leading-relaxed"
-                                            placeholder="mail@pagedone.com" />
+                                            placeholder="mail@gamil.com" />
                                     </div>
                                     <button
                                         class="py-3 px-7 rounded-lg bg-sky-800 max-[470px]:w-full text-base font-semibold text-white transition-all duration-500 hover:bg-sky-900">Subscribe</button>
@@ -74,7 +74,7 @@ export default function footer() {
                         </div>
                     </div>
                     <div class="flex flex-col-reverse gap-5 md:flex-row items-center first-letter:items-center justify-between pt-7">
-                        <p class="font-normal text-sm text-gray-400">©<a href="https://pagedone.io/">Urban Nest </a>{
+                        <p class="font-normal text-sm text-gray-400">©<a href="">Urban Nest </a>{
                             " " + new Date().getFullYear()}
 
 
