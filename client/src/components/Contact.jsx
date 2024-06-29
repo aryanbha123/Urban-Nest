@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Contact() {
     return (
-        <div>
+        <div id={"contact"}>
             <section
-                className="relative z-10 overflow-hidden bg-white dark:bg-dark py-20 lg:py-[120px]"
+                className="relative z-10 overflow-hidden bg-white dark:bg-dark py-0 lg:py-[60px]"
             >
                 <div className="container mx-auto">
                     <div className="flex flex-wrap -mx-4 lg:justify-between">
