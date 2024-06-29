@@ -20,7 +20,7 @@ export default function About() {
                     <div className="w-full md:w-1/2">
                         <img className="rounded-lg w-full" src={values} alt="Our Values" />
                     </div>
-                    <div className="w-full mt-6 md:w-1/2 pl-10">
+                    <div className="w-full mt-6 md:w-1/2 lg:pl-12">
                         <h4 className="text-3xl text-gray-800 font-bold mb-3">Our Values</h4>
                         <p className="text-gray-600 mb-2">We believe in integrity, transparency, and commitment. Our values guide us in every interaction and transaction, ensuring that we build trust and long-lasting relationships with our clients and partners.</p>
                     </div>

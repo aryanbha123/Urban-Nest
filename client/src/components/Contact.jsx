@@ -21,7 +21,7 @@ export default function Contact() {
                                 <p
                                     className="text-base leading-relaxed text-body-color dark:text-dark-6 mb-9"
                                 >
-                                   Are you interested in investing in farmhouses, agricultural land, property, or raw houses? Contact us for more information.
+                                    Are you interested in investing in farmhouses, agricultural land, property, or raw houses? Contact us for more information.
                                 </p>
                                 <div className="mb-8 flex w-full max-w-[370px]">
                                     <div
@@ -45,7 +45,10 @@ export default function Contact() {
                                             Our Location
                                         </h4>
                                         <p className="text-base text-body-color dark:text-dark-6">
-                                            99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                                            Nearby Lucknow kanpur Highway,Unnao
+
+                                            Landmark - Anandi Magic water Park, Ramada hotels,
+                                            Chandigarh University Lucknow campus
                                         </p>
                                     </div>
                                 </div>
@@ -86,7 +89,8 @@ export default function Contact() {
                                             Phone Number
                                         </h4>
                                         <p className="text-base text-body-color dark:text-dark-6">
-                                            (+62)81 414 257 9980
+                                            9936251470
+
                                         </p>
                                     </div>
                                 </div>

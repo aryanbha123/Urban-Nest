@@ -15,7 +15,7 @@ export default function footer() {
                                 <div class="flex flex-col min-[470px]:flex-row items-center gap-3 w-full">
                                     <div class="relative  text-gray-500 focus-within:text-gray-900 max-sm:w-full">
                                         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none ">
-                                           
+
                                         </div>
                                         <input type="text" id="default-search"
                                             class="block w-full max-sm:min-w-full sm:max-w-xs pr-4 pl-12 py-2.5 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-lg placeholder-gray-400 focus:outline-none leading-relaxed"
@@ -40,7 +40,10 @@ export default function footer() {
                                 <h6 class="text-lg font-medium text-gray-900 mb-7 max-sm:text-center">Address</h6>
                                 <ul class="flex flex-col gap-6">
                                     <li><p href="javascript:;"
-                                        class="text-base font-normal max-sm:text-center  text-gray-600">61-A, Elm street, Gujarat, India.</p>
+                                        class="text-base font-normal max-sm:text-center  text-gray-600">
+                                        Nearby Lucknow kanpur Highway,Unnao
+                                        Landmark - Anandi Magic water Park, Ramada hotels,
+                                        Chandigarh University Lucknow campus</p>
                                     </li>
 
                                 </ul>
@@ -49,9 +52,11 @@ export default function footer() {
                                 <h6 class="text-lg font-medium text-gray-900 mb-7 max-sm:text-center">Contact</h6>
                                 <ul class="flex flex-col gap-6">
                                     <li><p href="javascript:;"
-                                        class="text-base font-normal max-sm:text-center text-gray-600 whitespace-nowrap">+91 945 658 3256</p></li>
+                                        class="text-base font-normal max-sm:text-center text-gray-600 whitespace-nowrap">+91 9936251470
+
+                                        </p></li>
                                     <li><p href="javascript:;"
-                                        class="text-base font-normal max-sm:text-center text-gray-600 whitespace-nowrap ">support@pagedone.com</p></li>
+                                        class="text-base font-normal max-sm:text-center text-gray-600 whitespace-nowrap ">urbanNest.support@gmmail.com</p></li>
 
                                 </ul>
                             </div>
@@ -70,7 +75,7 @@ export default function footer() {
                     </div>
                     <div class="flex flex-col-reverse gap-5 md:flex-row items-center first-letter:items-center justify-between pt-7">
                         <p class="font-normal text-sm text-gray-400">©<a href="https://pagedone.io/">Urban Nest </a>{
-                           " " + new Date().getFullYear()}
+                            " " + new Date().getFullYear()}
 
 
                             , All rights reserved.</p>

@@ -55,8 +55,8 @@
         transition: all .2s linear;
         button{
             position: fixed;
-            top: 20px;
-            right: 20px;
+            top: 30px;
+            right: 50px;
         }
     }
 

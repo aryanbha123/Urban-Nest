@@ -3,7 +3,7 @@ import logo from '../assets/logo.png'
 import Logo from '../assets/logo.png'
 import './Header.css'
 // import { Link } from 'react-router-dom'
-import { Link  } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { IconButton } from '@mui/material'
 import { CloseRounded, MenuRounded } from '@mui/icons-material'
 export default function Header() {
@@ -28,33 +28,39 @@ export default function Header() {
     }, []);
 
     return (
-        <nav className={`flex border-b-2 shadow justify-between items-center bg-white ${fixed ? 'nav-fixed' : ''}`} style={{ background: "", color: "" }}>
-            <div className="logo flex justify-center" style={{ width: "", height: "auto", background: "" }}>
-                <img height={"100px"} width={"100px"} src={Logo} alt="" />
-            </div>
-            <div className="navitems-lg flex gap-8 flex-1 justify-end pr-5 ">
-                <Link smooth={true} duration={500}  style={{cursor:"pointer"}} className='hover:text-sky-900'><li>Home</li></Link>
-                <Link smooth={true} duration={500}  style={{cursor:"pointer"}} to={"about"} className='hover:text-sky-900'><li>About</li></Link>
-                <Link smooth={true} duration={500}  style={{cursor:"pointer"}} className='hover:text-sky-900'><li>Services</li></Link>
-                <Link smooth={true} duration={500}  style={{cursor:"pointer"}} className='hover:text-sky-900'><li>Brouchers</li></Link>
-                <Link smooth={true} duration={500}  style={{cursor:"pointer"}} to='contact' className='hover:text-sky-900'><li>Contact</li></Link>
-            </div>
-            <div className="hamBtn">
-                <IconButton color='inherit' onClick={() => setShow(true)}>
-                    <MenuRounded />
-                </IconButton>
-            </div>
-            <div className={`navitems-sm  ${show ?'showNav' : ''}`}>
-                <IconButton onClick={() => setShow(false)}>
-                    <CloseRounded/>
-                </IconButton>
-                <Link smooth={true} duration={500}  style={{cursor:"pointer"}} onClick={() => setShow(false)} to={"/"}><li>Home</li></Link>
-                <Link smooth={true} duration={500}  style={{cursor:"pointer"}} onClick={() => setShow(false)} to={"about"}><li>About</li></Link>
-                <Link smooth={true} duration={500}  style={{cursor:"pointer"}} onClick={() => setShow(false)} to={"/"}><li>Services</li></Link>
-                <Link smooth={true} duration={500}  style={{cursor:"pointer"}} onClick={() => setShow(false)} to={"/"}><li>Brouchers</li></Link>
-                <Link smooth={true} duration={500}  style={{cursor:"pointer"}} onClick={() => setShow(false)} to={"/contact"}><li>Contact</li></Link>
-            </div>
+        <>
+            <div id=""></div>
+            <nav id='' className={`flex border-b-2 shadow justify-between items-center bg-white ${fixed ? 'nav-fixed' : ''}`} style={{ background: "", color: "" }}>
+                <div className="logo flex justify-center" style={{ width: "", height: "auto", background: "" }}>
+                    <img height={"100px"} width={"100px"} src={Logo} alt="" />
+                </div>
+                <div className="navitems-lg flex gap-8 flex-1 justify-end pr-5 ">
+                    <Link smooth={true} duration={500} style={{ cursor: "pointer" }} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className='hover:text-sky-900'><li>Home</li></Link>
+                    <Link smooth={true} duration={500} style={{ cursor: "pointer" }} to={"about"} className='hover:text-sky-900'><li>About</li></Link>
+                    <Link smooth={true} duration={500} style={{ cursor: "pointer" }} to='services' className='hover:text-sky-900'><li>Services</li></Link>
+                    <Link smooth={true} duration={500} style={{ cursor: "pointer" }} to='' className='hover:text-sky-900'><li>Brouchers</li></Link>
+                    <Link smooth={true} duration={500} style={{ cursor: "pointer" }} to='contact' className='hover:text-sky-900'><li>Contact</li></Link>
+                </div>
+                <div className="hamBtn">
+                    <IconButton color='inherit' onClick={() => setShow(true)}>
+                        <MenuRounded />
+                    </IconButton>
+                </div>
+                <div className={`navitems-sm  ${show ? 'showNav' : ''}`}>
+                    <IconButton onClick={() => setShow(false)}>
+                        <CloseRounded />
+                    </IconButton>
+                    <Link smooth={true} duration={500} style={{ cursor: "pointer" }}  onClick={() => {
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                            setShow(false);
+                        }} ><li>Home</li></Link>
+                    <Link smooth={true} duration={500} style={{ cursor: "pointer" }} onClick={() => setShow(false)} to={"about"}><li>About</li></Link>
+                    <Link smooth={true} duration={500} style={{ cursor: "pointer" }} onClick={() => setShow(false)} to={"services"}><li>Services</li></Link>
+                    <Link smooth={true} duration={500} style={{ cursor: "pointer" }} onClick={() => setShow(false)} to={"/"}><li>Brouchers</li></Link>
+                    <Link smooth={true} duration={500} style={{ cursor: "pointer" }} onClick={() => setShow(false)} to="contact"><li>Contact</li></Link>
+                </div>
 
-        </nav>
+            </nav>
+        </>
     )
 }
