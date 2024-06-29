@@ -8,18 +8,18 @@ export default function Carousel() {
     const slides = [
         {
             src: Caursel1,
-            label: "First slide label",
-            text: "Some representative placeholder content for the first slide."
+            label: "Invest in Dehradun",
+            text: "Discover why Dehradun is becoming a hotspot for real estate and business investment."
         },
         {
             src: Caursel2,
-            label: "Second slide label",
-            text: "Some representative placeholder content for the second slide."
+            label: "Invest in Lucknow",
+            text: "Learn about the growth opportunities in Lucknow and its booming infrastructure."
         },
         {
             src: Caursel3,
-            label: "Third slide label",
-            text: "Some representative placeholder content for the third slide."
+            label: "Emerging Markets",
+            text: "Explore the emerging markets in Dehradun and Lucknow and how they can benefit you."
         }
     ];
 

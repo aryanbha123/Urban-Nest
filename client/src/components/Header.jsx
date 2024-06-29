@@ -47,11 +47,11 @@ export default function Header() {
                 <IconButton onClick={() => setShow(false)}>
                     <CloseRounded/>
                 </IconButton>
-                <Link><li>Home</li></Link>
-                <Link><li>About</li></Link>
-                <Link><li>Services</li></Link>
-                <Link><li>Brouchers</li></Link>
-                <Link><li>Contact</li></Link>
+                <Link onClick={() => setShow(false)} to={"/"}><li>Home</li></Link>
+                <Link onClick={() => setShow(false)} to={"/"}><li>About</li></Link>
+                <Link onClick={() => setShow(false)} to={"/"}><li>Services</li></Link>
+                <Link onClick={() => setShow(false)} to={"/"}><li>Brouchers</li></Link>
+                <Link onClick={() => setShow(false)} to={"/"}><li>Contact</li></Link>
             </div>
 
         </nav>

@@ -3,14 +3,14 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/footer';
-
+import Loader from './components/Loader';
 
 const Home = lazy(() => import('./pages/Home'));
 
 function App() {
   return (
     <>
-      <Suspense>
+      <Suspense fallback={<Loader/>}>
         <BrowserRouter>
           <Header />
           <Routes>
