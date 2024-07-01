@@ -29,48 +29,7 @@ export default function Invest() {
                 </div>
 
                 <div className="grid max-w-md gap-8 row-gap-10 sm:mx-auto lg:max-w-full lg:grid-cols-3">
-                    <div className="flex flex-col sm:flex-row">
-                        <div className="sm:mr-4">
-                            <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-green-50">
-                                <svg className="w-12 h-12 text-sky-500" stroke="currentColor" viewBox="0 0 52 52">
-                                    <polygon strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                                </svg>
-                            </div>
-                        </div>
-                        <div>
-                            <h6 className="mb-2 font-semibold leading-5">Dehradun: Gateway to the Himalayas</h6>
-                            <p className="mb-3 text-sm text-gray-900">
-                                Known for its scenic beauty and pleasant climate, Dehradun is emerging as a prime destination for real estate investment.
-                            </p>
-                            <ul className="mb-4 -ml-1 space-y-2">
-                                <li className="flex items-start">
-                                    <span className="mr-1">
-                                        <svg className="w-5 h-5 mt-px text-sky-500" stroke="currentColor" viewBox="0 0 52 52">
-                                            <polygon strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                                        </svg>
-                                    </span>
-                                    Education Hub
-                                </li>
-                                <li className="flex items-start">
-                                    <span className="mr-1">
-                                        <svg className="w-5 h-5 mt-px text-sky-500" stroke="currentColor" viewBox="0 0 52 52">
-                                            <polygon strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                                        </svg>
-                                    </span>
-                                    Tourism
-                                </li>
-                                <li className="flex items-start">
-                                    <span className="mr-1">
-                                        <svg className="w-5 h-5 mt-px text-sky-500" stroke="currentColor" viewBox="0 0 52 52">
-                                            <polygon strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                                        </svg>
-                                    </span>
-                                    IT Sector Growth
-                                </li>
-                            </ul>
-                            <a href="/" aria-label="" className="inline-flex items-center font-semibold transition-colors duration-200 text-sky-500 hover:text-sky-500">Learn more</a>
-                        </div>
-                    </div>
+
                     <div className="flex flex-col sm:flex-row">
                         <div className="sm:mr-4">
                             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-green-50">
@@ -108,6 +67,48 @@ export default function Invest() {
                                         </svg>
                                     </span>
                                     Cultural Heritage
+                                </li>
+                            </ul>
+                            <a href="/" aria-label="" className="inline-flex items-center font-semibold transition-colors duration-200 text-sky-500 hover:text-sky-500">Learn more</a>
+                        </div>
+                    </div>
+                    <div className="flex flex-col sm:flex-row">
+                        <div className="sm:mr-4">
+                            <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-green-50">
+                                <svg className="w-12 h-12 text-sky-500" stroke="currentColor" viewBox="0 0 52 52">
+                                    <polygon strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 className="mb-2 font-semibold leading-5">Dehradun: Gateway to the Himalayas</h6>
+                            <p className="mb-3 text-sm text-gray-900">
+                                Known for its scenic beauty and pleasant climate, Dehradun is emerging as a prime destination for real estate investment.
+                            </p>
+                            <ul className="mb-4 -ml-1 space-y-2">
+                                <li className="flex items-start">
+                                    <span className="mr-1">
+                                        <svg className="w-5 h-5 mt-px text-sky-500" stroke="currentColor" viewBox="0 0 52 52">
+                                            <polygon strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                        </svg>
+                                    </span>
+                                    Education Hub
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="mr-1">
+                                        <svg className="w-5 h-5 mt-px text-sky-500" stroke="currentColor" viewBox="0 0 52 52">
+                                            <polygon strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                        </svg>
+                                    </span>
+                                    Tourism
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="mr-1">
+                                        <svg className="w-5 h-5 mt-px text-sky-500" stroke="currentColor" viewBox="0 0 52 52">
+                                            <polygon strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                        </svg>
+                                    </span>
+                                    IT Sector Growth
                                 </li>
                             </ul>
                             <a href="/" aria-label="" className="inline-flex items-center font-semibold transition-colors duration-200 text-sky-500 hover:text-sky-500">Learn more</a>
