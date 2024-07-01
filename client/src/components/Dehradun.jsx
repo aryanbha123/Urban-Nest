@@ -18,7 +18,7 @@ export default function Stories() {
             />
             <div className="lg:pl-8 lg:pt-4">
               <div className="lg:max-w-lg">
-                <h2 className="text-base font-semibold leading-7 text-indigo-600">Why Invest in Dehradun?</h2>
+                <h2 className="text-base font-semibold leading-7 text-sky-600">Why Invest in Dehradun?</h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A Hub of Opportunities</p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   Dehradun, a renowned tourist destination, is set to become a hub for universities, attracting investments in various sectors.
@@ -31,7 +31,7 @@ export default function Stories() {
                         viewBox="0 0 20 20" 
                         fill="currentColor" 
                         aria-hidden="true" 
-                        className="absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                        className="absolute left-1 top-1 h-5 w-5 text-sky-600"
                       >
                         <path d="M3.196 12.87l-.825.483a.75.75 0 000 1.294l7.25 4.25a.75.75 0 00.758 0l7.25-4.25a.75.75 0 000-1.294l-.825-.484-5.666 3.322a2.25 2.25 0 01-2.276 0L3.196 12.87z"></path>
                         <path d="M3.196 8.87l-.825.483a.75.75 0 000 1.294l7.25 4.25a.75.75 0 00.758 0l7.25-4.25a.75.75 0 000-1.294l-.825-.484-5.666 3.322a2.25 2.25 0 01-2.276 0L3.196 8.87z"></path>
@@ -48,7 +48,7 @@ export default function Stories() {
                         viewBox="0 0 20 20" 
                         fill="currentColor" 
                         aria-hidden="true" 
-                        className="absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                        className="absolute left-1 top-1 h-5 w-5 text-sky-600"
                       >
                         <path 
                           fillRule="evenodd" 
@@ -67,7 +67,7 @@ export default function Stories() {
                         viewBox="0 0 20 20" 
                         fill="currentColor" 
                         aria-hidden="true" 
-                        className="absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                        className="absolute left-1 top-1 h-5 w-5 text-sky-600"
                       >
                         <path 
                           fillRule="evenodd" 
