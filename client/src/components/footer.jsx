@@ -54,7 +54,7 @@ export default function footer() {
                                     <li><p href="javascript:;"
                                         class="text-base font-normal max-sm:text-center text-gray-600 whitespace-nowrap">+91 9936251470
 
-                                        </p></li>
+                                    </p></li>
                                     <li><p href="javascript:;"
                                         class="text-base font-normal max-sm:text-center text-gray-600 whitespace-nowrap ">urbanNest.support@gmmail.com</p></li>
 
