@@ -5,7 +5,7 @@ const propertiesData = [
     id: '1',
     name: "Mount Olive Road",
     location: "Dehradun",
-    pricing: "$12,000",
+    pricing: "Rs. 12,000",
     features: {
       area: "340m²",
       beds: 2,
@@ -20,7 +20,7 @@ const propertiesData = [
     id: '2',
     name: "Green Meadows",
     location: "Lucknow",
-    pricing: "$15,000",
+    pricing: "Rs. 15,000",
     features: {
       area: "400m²",
       beds: 3,
@@ -35,7 +35,7 @@ const propertiesData = [
     id: '3',
     name: "Sunset Boulevard",
     location: "Unnau",
-    pricing: "$10,000",
+    pricing: "Rs. 10,000",
     features: {
       area: "300m²",
       beds: 2,
@@ -50,7 +50,7 @@ const propertiesData = [
     id: '4',
     name: "Hilltop Hostel",
     location: "Dehradun",
-    pricing: "$8,000",
+    pricing: "Rs. 8,000",
     features: {
       area: "250m²",
       beds: 4,
@@ -65,7 +65,7 @@ const propertiesData = [
     id: '5',
     name: "Urban Retreat",
     location: "Lucknow",
-    pricing: "$18,000",
+    pricing: "Rs. 18,000",
     features: {
       area: "450m²",
       beds: 4,
@@ -80,7 +80,7 @@ const propertiesData = [
     id: '6',
     name: "Country Escape",
     location: "Unnau",
-    pricing: "$11,000",
+    pricing: "Rs. 11,000",
     features: {
       area: "350m²",
       beds: 3,
