@@ -40,18 +40,19 @@
         left: 0;
         height: 100vh;
         font-size: 18px;
+        padding: 70px 0px;
         /* font-size: 2.20rem; */
         font-weight: normal;
         letter-spacing: 0.00rem;
         line-height: 1.55;
         text-transform: none;
         font-family: "Inter";
-        width: 100vw;
+        width: 60vw;
         top: 0;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         flex-direction: column;
-        transform: translateX(100%);
+        transform: translateX(-100%);
         transition: all .2s linear;
         button{
             position: fixed;

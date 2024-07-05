@@ -16,3 +16,7 @@ li {
 body{
     min-height:120vh;
 }
+
+.card-img{
+    height: 200px;
+}
