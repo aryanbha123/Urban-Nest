@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import logo from '../assets/logo.png'
 import Logo from '../assets/logo.png'
 import './Header.css'
+import {Link as RLink} from 'react-router-dom'
 // import { Link } from 'react-router-dom'
 import { Link } from 'react-scroll';
 import { IconButton } from '@mui/material'
@@ -38,7 +39,7 @@ export default function Header() {
                     <Link smooth={true} duration={500} style={{ cursor: "pointer" }} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className='hover:text-sky-900'><li>Home</li></Link>
                     <Link smooth={true} duration={500} style={{ cursor: "pointer" }} to={"about"} className='hover:text-sky-900'><li>About</li></Link>
                     <Link smooth={true} duration={500} style={{ cursor: "pointer" }} to='services' className='hover:text-sky-900'><li>Services</li></Link>
-                    <Link smooth={true} duration={500} style={{ cursor: "pointer" }} to='' className='hover:text-sky-900'><li>Brouchers</li></Link>
+                    <RLink smooth={true} duration={500} style={{ cursor: "pointer" }} to='/properties' className='hover:text-sky-900'><li>Properties</li></RLink>
                     <Link smooth={true} duration={500} style={{ cursor: "pointer" }} to='contact' className='hover:text-sky-900'><li>Contact</li></Link>
                 </div>
                 <div className="hamBtn">
@@ -56,7 +57,7 @@ export default function Header() {
                         }} ><li>Home</li></Link>
                     <Link smooth={true} duration={500} style={{ cursor: "pointer" }} onClick={() => setShow(false)} to={"about"}><li>About</li></Link>
                     <Link smooth={true} duration={500} style={{ cursor: "pointer" }} onClick={() => setShow(false)} to={"services"}><li>Services</li></Link>
-                    <Link smooth={true} duration={500} style={{ cursor: "pointer" }} onClick={() => setShow(false)} to={"/"}><li>Brouchers</li></Link>
+                    <RLink smooth={true} duration={500} style={{ cursor: "pointer" }} onClick={() => setShow(false)} to={"/properties"}><li>Properties</li></RLink>
                     <Link smooth={true} duration={500} style={{ cursor: "pointer" }} onClick={() => setShow(false)} to="contact"><li>Contact</li></Link>
                 </div>
 
