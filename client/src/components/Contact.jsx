@@ -1,6 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 export default function Contact() {
+
+    const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    });
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({ ...prevData, [name]: value }));
+      };
+    
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        const response = await fetch('http://localhost:5000/api/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        });
+    
+        if (response.ok) {
+          alert('Message sent successfully');
+          setFormData({ name: '', email: '', phone: '', message: '' });
+        } else {
+          alert('Failed to send message');
+        }
+      };
     return (
         <div id={"contact"}>
             <section
@@ -124,44 +153,56 @@ export default function Contact() {
                         </div>
                         <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
                             <div className="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
-                                <form>
-                                    <div className="mb-6">
-                                        <input
-                                            type="text"
-                                            placeholder="Your Name"
-                                            className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
-                                        />
-                                    </div>
-                                    <div className="mb-6">
-                                        <input
-                                            type="email"
-                                            placeholder="Your Email"
-                                            className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
-                                        />
-                                    </div>
-                                    <div className="mb-6">
-                                        <input
-                                            type="text"
-                                            placeholder="Your Phone"
-                                            className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
-                                        />
-                                    </div>
-                                    <div className="mb-6">
-                                        <textarea
-                                            rows="6"
-                                            placeholder="Your Message"
-                                            className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
-                                        ></textarea>
-                                    </div>
-                                    <div>
-                                        <button
-                                            type="submit"
-                                            className="w-full p-3 text-white transition border rounded border-primary bg-sky-500 hover:bg-opacity-90"
-                                        >
-                                            Send Message
-                                        </button>
-                                    </div>
-                                </form>
+                            <form onSubmit={handleSubmit}>
+      <div className="mb-6">
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          value={formData.name}
+          onChange={handleChange}
+          className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+        />
+      </div>
+      <div className="mb-6">
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          value={formData.email}
+          onChange={handleChange}
+          className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+        />
+      </div>
+      <div className="mb-6">
+        <input
+          type="text"
+          name="phone"
+          placeholder="Your Phone"
+          value={formData.phone}
+          onChange={handleChange}
+          className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+        />
+      </div>
+      <div className="mb-6">
+        <textarea
+          rows="6"
+          name="message"
+          placeholder="Your Message"
+          value={formData.message}
+          onChange={handleChange}
+          className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
+        ></textarea>
+      </div>
+      <div>
+        <button
+          type="submit"
+          className="w-full p-3 text-white transition border rounded border-primary bg-sky-500 hover:bg-opacity-90"
+        >
+          Send Message
+        </button>
+      </div>
+    </form>
                                 <div>
                                     <span className="absolute -top-10 -right-9 z-[-1]">
                                         <svg
